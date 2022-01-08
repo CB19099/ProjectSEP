@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('StudentProfile');
 });
+
+/*Meeting Booking*/
+Route::get('gotomeetingForm', function () {
+    return view('AddMeetingBooking');
+});
+Route::post('submit', 'App\Http\Controllers\MeetingController@AddMeetingBooking' );
+

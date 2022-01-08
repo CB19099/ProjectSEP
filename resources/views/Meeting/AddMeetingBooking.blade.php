@@ -76,7 +76,8 @@
 <h2 style="text-align: center;">BOOKING FORM</h2>
 <br>
 <table>
-	<form name="meetingForm" method="post" action="">
+	<form action="meetingForm" method="post" action="">
+	@csrf <!-- create a token (to execute) -->
 	<tr>
 		<p>
 		<td>
@@ -152,15 +153,5 @@
 </form>
 </fieldset>
 </center>
-
-</div>
-
-            </table>
-        </div>
-		
-		
- </body>
-
-
 </html>
 
